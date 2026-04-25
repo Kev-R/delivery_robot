@@ -1,0 +1,21 @@
+# colcon build artifacts
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+# Don't ignore the maps directory itself, but DO ignore size-bloat
+# stuff if it ever accumulates
+*.bag
+*.db3

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>delivery_bringup</name>
+  <version>0.2.0</version>
+  <description>
+    Launch files, params, maps and RViz configs for the delivery robot.
+    Wraps Yahboom's hardware bringup and Nav2 navigation stack with our
+    saved arena map and tuned params (A* enabled, cmd_vel routed through
+    our safety gate).
+  </description>
+  <maintainer email="you@example.com">delivery_team</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>nav2_bringup</exec_depend>
+  <exec_depend>nav2_map_server</exec_depend>
+  <exec_depend>yahboomcar_bringup</exec_depend>
+  <exec_depend>yahboomcar_nav</exec_depend>
+  <exec_depend>sllidar_ros2</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

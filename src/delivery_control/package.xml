@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <n>delivery_control</n>
+  <version>0.2.0</version>
+  <description>
+    Safety teleop gate for the delivery robot. The only node that publishes
+    /cmd_vel — Nav2's controller_server output is remapped to /cmd_vel_nav
+    in the navigation launch file, then this node decides whether to forward
+    it to /cmd_vel based on user input (autonomy enable/disable, teleop
+    override, e-stop).
+  </description>
+  <maintainer email="you@example.com">delivery_team</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
