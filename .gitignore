@@ -19,3 +19,6 @@ __pycache__/
 # stuff if it ever accumulates
 *.bag
 *.db3
+
+core/
+
